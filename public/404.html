@@ -10,7 +10,7 @@
         var relative = path.indexOf(base) === 0
           ? path.slice(base.length)
           : path.replace(/^\//, '')
-        var target = '/' + relative + window.location.search + window.location.hash
+        var target = relative + window.location.search + window.location.hash
         window.location.replace(base + '?/' + encodeURIComponent(target))
       })()
     </script>
