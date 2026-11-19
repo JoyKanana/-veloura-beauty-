@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Rose Dew Hydrating Serum",
+      "description": "A lightweight serum with hyaluronic acid and rose extract to plump and hydrate the skin throughout the day.",
+      "category": "Skincare",
+      "price": 28.0,
+      "stock": 24,
+      "imageUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "2",
+      "name": "Velvet Matte Lipstick - Blush Nude",
+      "description": "Creamy matte lipstick enriched with shea butter for comfortable, long-lasting color in a soft nude-pink shade.",
+      "category": "Makeup",
+      "price": 18.5,
+      "stock": 40,
+      "imageUrl": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "3",
+      "name": "Citrus Glow Vitamin C Cleanser",
+      "description": "Gentle foaming cleanser with vitamin C and citrus botanicals to brighten and refresh without stripping moisture.",
+      "category": "Skincare",
+      "price": 22.0,
+      "stock": 15,
+      "imageUrl": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "4",
+      "name": "Argan Silk Hair Oil",
+      "description": "Nourishing argan oil blend that tames frizz, adds shine, and protects hair from heat styling.",
+      "category": "Haircare",
+      "price": 24.99,
+      "stock": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "5",
+      "name": "Soothing Chamomile Body Lotion",
+      "description": "Rich, fast-absorbing body lotion with chamomile and oat extract to calm and soften dry skin.",
+      "category": "Body Care",
+      "price": 16.0,
+      "stock": 32,
+      "imageUrl": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "6",
+      "name": "Radiance Mineral Sunscreen SPF 50",
+      "description": "Broad-spectrum mineral sunscreen with zinc oxide that protects skin while leaving a natural, non-greasy finish.",
+      "category": "Skincare",
+      "price": 30.0,
+      "stock": 18,
+      "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "7",
+      "name": "Peony Bloom Eau de Parfum",
+      "description": "A delicate floral fragrance with notes of peony, white musk, and soft amber for an elegant everyday scent.",
+      "category": "Fragrance",
+      "price": 54.0,
+      "stock": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop"
+    },
+    {
+      "id": "8",
+      "name": "Overnight Repair Eye Cream",
+      "description": "Nourishing eye cream with peptides and caffeine to reduce puffiness and smooth fine lines while you sleep.",
+      "category": "Skincare",
+      "price": 34.0,
+      "stock": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop"
+    }
+  ]
+}
