@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import fallbackData from '../../db.json'
 
 const API_BASE_URL = 'http://localhost:3001'
 
@@ -28,7 +29,11 @@ function useProducts() {
       const data = await handleResponse(response)
       setProducts(data)
     } catch (err) {
-      setError(err.message || 'Failed to fetch products')
+      if (err instanceof TypeError) {
+        setProducts(fallbackData.products || [])
+      } else {
+        setError(err.message || 'Failed to fetch products')
+      }
     } finally {
       setLoading(false)
     }
@@ -46,7 +51,11 @@ function useProducts() {
         }
       } catch (err) {
         if (isActive) {
-          setError(err.message || 'Failed to fetch products')
+          if (err instanceof TypeError) {
+            setProducts(fallbackData.products || [])
+          } else {
+            setError(err.message || 'Failed to fetch products')
+          }
         }
       } finally {
         if (isActive) {
