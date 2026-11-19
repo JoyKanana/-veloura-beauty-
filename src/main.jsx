@@ -8,7 +8,7 @@ import { ProductProvider } from './context/ProductContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ProductProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
     </ProductProvider>

@@ -11,7 +11,7 @@ const mockProducts = [
     name: 'Rose Dew Hydrating Serum',
     description: 'Lightweight hydrating serum',
     category: 'Skincare',
-    price: 28,
+    price: 3640,
     stock: 24,
     imageUrl: 'https://example.com/1.jpg',
   },
@@ -51,7 +51,7 @@ describe('ProductDetails', () => {
       await screen.findByRole('heading', { name: 'Rose Dew Hydrating Serum' }),
     ).toBeInTheDocument()
     expect(screen.getByText('Skincare')).toBeInTheDocument()
-    expect(screen.getByText('$28.00')).toBeInTheDocument()
+    expect(screen.getByText('KSh 3,640')).toBeInTheDocument()
     expect(screen.getByText('24 in stock')).toBeInTheDocument()
     expect(
       screen.getByText('Lightweight hydrating serum'),

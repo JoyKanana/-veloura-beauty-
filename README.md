@@ -14,6 +14,8 @@ This project demonstrates core React concepts in a practical admin dashboard:
 
 The interface follows a clean, minimal beauty-brand style with a white background, blush pink accents, charcoal text, and responsive layouts.
 
+Prices are displayed in Kenyan shillings (KSh). The starter product prices were converted from USD using an approximate rate of 1 USD = KSh 130; this is a one-time sample-data conversion, not a live exchange rate.
+
 ## Features and Functionality
 
 - **Dashboard (`/`)**
@@ -129,6 +131,8 @@ npm run dev
 
 - Starts Vite dev server (URL shown in terminal, typically `http://localhost:5173`)
 - Keep JSON Server running so the app can load and manage products
+
+The app footer displays the provided Kenya contact details.
 
 ## Running Automated Tests
 

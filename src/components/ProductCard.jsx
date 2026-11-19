@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
+import formatCurrency from '../utils/formatCurrency'
 
 function ProductCard({ product }) {
-  const price = Number(product.price).toFixed(2)
   const inStock = Number(product.stock) > 0
 
   return (
@@ -15,7 +15,7 @@ function ProductCard({ product }) {
         <p className="product-category">{product.category}</p>
         <h3 className="product-name">{product.name}</h3>
         <div className="product-meta">
-          <span className="product-price">${price}</span>
+          <span className="product-price">{formatCurrency(product.price)}</span>
           <span className={inStock ? 'stock-badge in-stock' : 'stock-badge out-of-stock'}>
             {inStock ? `In stock: ${product.stock}` : 'Out of stock'}
           </span>

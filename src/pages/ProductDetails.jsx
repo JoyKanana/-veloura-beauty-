@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useProductContext } from '../context/ProductContext'
+import formatCurrency from '../utils/formatCurrency'
 
 function ProductDetails() {
   const { id } = useParams()
@@ -68,7 +69,7 @@ function ProductDetails() {
             <div className="details-info">
               <p className="product-category">{product.category}</p>
               <h2>{product.name}</h2>
-              <p className="details-price">${Number(product.price).toFixed(2)}</p>
+              <p className="details-price">{formatCurrency(product.price)}</p>
               <p>
                 <strong>Stock:</strong>{' '}
                 {Number(product.stock) > 0

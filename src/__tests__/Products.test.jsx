@@ -75,6 +75,8 @@ describe('Products page', () => {
     expect(screen.getByText('Velvet Matte Lipstick')).toBeInTheDocument()
     expect(screen.getByText('Citrus Glow Cleanser')).toBeInTheDocument()
     expect(screen.getByText('Argan Silk Hair Oil')).toBeInTheDocument()
+    expect(screen.getByText('KSh 28')).toBeInTheDocument()
+    expect(screen.getByText('KSh 18.5')).toBeInTheDocument()
   })
 
   it('searches dynamically by product name', async () => {

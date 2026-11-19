@@ -9,7 +9,7 @@ describe('ProductForm', () => {
 
     expect(screen.getByLabelText('Product Name')).toBeInTheDocument()
     expect(screen.getByLabelText('Category')).toBeInTheDocument()
-    expect(screen.getByLabelText('Price')).toBeInTheDocument()
+    expect(screen.getByLabelText('Price (KSh)')).toBeInTheDocument()
     expect(screen.getByLabelText('Stock Quantity')).toBeInTheDocument()
     expect(screen.getByLabelText('Image URL')).toBeInTheDocument()
     expect(screen.getByLabelText('Description')).toBeInTheDocument()
@@ -45,7 +45,7 @@ describe('ProductForm', () => {
 
     await user.type(screen.getByLabelText('Product Name'), 'Rose Serum')
     await user.type(screen.getByLabelText('Category'), 'Skincare')
-    await user.type(screen.getByLabelText('Price'), '0')
+    await user.type(screen.getByLabelText('Price (KSh)'), '0')
     await user.type(screen.getByLabelText('Stock Quantity'), '5')
     await user.type(
       screen.getByLabelText('Image URL'),
@@ -67,7 +67,7 @@ describe('ProductForm', () => {
 
     await user.type(screen.getByLabelText('Product Name'), 'Rose Serum')
     await user.type(screen.getByLabelText('Category'), 'Skincare')
-    await user.type(screen.getByLabelText('Price'), '10')
+    await user.type(screen.getByLabelText('Price (KSh)'), '10')
     await user.type(screen.getByLabelText('Stock Quantity'), '-1')
     await user.type(
       screen.getByLabelText('Image URL'),
@@ -89,7 +89,7 @@ describe('ProductForm', () => {
 
     await user.type(screen.getByLabelText('Product Name'), '  Rose Serum  ')
     await user.type(screen.getByLabelText('Category'), '  Skincare  ')
-    await user.type(screen.getByLabelText('Price'), '25.5')
+    await user.type(screen.getByLabelText('Price (KSh)'), '25.5')
     await user.type(screen.getByLabelText('Stock Quantity'), '10')
     await user.type(
       screen.getByLabelText('Image URL'),
@@ -119,7 +119,7 @@ describe('ProductForm', () => {
 
     await user.type(screen.getByLabelText('Product Name'), 'Lip Balm')
     await user.type(screen.getByLabelText('Category'), 'Makeup')
-    await user.type(screen.getByLabelText('Price'), '12.99')
+    await user.type(screen.getByLabelText('Price (KSh)'), '12.99')
     await user.type(screen.getByLabelText('Stock Quantity'), '3')
     await user.type(
       screen.getByLabelText('Image URL'),

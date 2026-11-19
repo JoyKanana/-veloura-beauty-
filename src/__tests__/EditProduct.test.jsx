@@ -90,7 +90,7 @@ describe('EditProduct', () => {
     const nameInput = screen.getByLabelText('Product Name')
     await user.clear(nameInput)
     await user.type(nameInput, 'Rose Dew Serum Plus')
-    const priceInput = screen.getByLabelText('Price')
+    const priceInput = screen.getByLabelText('Price (KSh)')
     await user.clear(priceInput)
     await user.type(priceInput, '30')
     const stockInput = screen.getByLabelText('Stock Quantity')

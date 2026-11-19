@@ -116,7 +116,7 @@ function ProductForm({
         </div>
 
         <div className="form-group">
-          <label htmlFor={`${formId}-price`}>Price</label>
+          <label htmlFor={`${formId}-price`}>Price (KSh)</label>
           <input
             id={`${formId}-price`}
             name="price"

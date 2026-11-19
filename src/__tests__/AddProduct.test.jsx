@@ -21,7 +21,7 @@ function renderAddProduct() {
 async function fillValidForm(user) {
   await user.type(screen.getByLabelText('Product Name'), 'New Glow Serum')
   await user.type(screen.getByLabelText('Category'), 'Skincare')
-  await user.type(screen.getByLabelText('Price'), '29.99')
+  await user.type(screen.getByLabelText('Price (KSh)'), '29.99')
   await user.type(screen.getByLabelText('Stock Quantity'), '12')
   await user.type(
     screen.getByLabelText('Image URL'),
