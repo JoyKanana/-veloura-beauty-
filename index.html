@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>-veloura-beauty</title>
+    <script>
+      (function () {
+        var base = '/-veloura-beauty-/'
+        var search = window.location.search
+        if (search.indexOf('?/') !== 0) return
+        var target = decodeURIComponent(search.slice(1))
+        window.history.replaceState(null, '', base + target.replace(/^\//, ''))
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -153,6 +153,18 @@ To preview the production build locally:
 npm run preview
 ```
 
+## GitHub Pages Deployment
+
+The `main` branch is deployed with GitHub Actions to
+`https://joykanana.github.io/-veloura-beauty-/`. Vite uses the
+`/-veloura-beauty-/` base path, and `public/404.html` keeps direct links to
+client-side routes working after a page refresh.
+
+The dashboard and product list fall back to the eight products in `db.json`
+when the API is unreachable. JSON Server CRUD (add, edit, and delete) works
+locally with `npm run server`; GitHub Pages serves static files only, so
+persistent CRUD there requires a separately deployed API.
+
 ## API Endpoints Supported
 
 The application uses JSON Server with the base URL `http://localhost:3001`.
